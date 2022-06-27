@@ -1,0 +1,29 @@
+---
+sidebar: sidebar
+permalink: net-cg-events.html
+keywords: ems, message, messages, event, events, group, catalog
+summary: net.cg events
+---
+
+= net.cg events
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+== net.cg.utilThresholdExceed
+*Severity*::
+NOTICE
+*Description*::
+This message occurs when the current connection group utilization exceeds the configured threshold. The client workload is distributed among connection groups. If one connection group utilization is much higher than the others, it might indicate an imbalance that could affect the subset of clients using that connection group. If all connection groups are experiencing high utilization, it might indicate that the workload is nearing the capacity of the storage controller.
+*Corrective Action*::
+Use the "statistics show -raw -object nwk_ctx -counter utilization" command to monitor the connection group utilization. Adjust the workload or increase the capacity to avoid over-utilization.
+*Syslog Message*::
+Utilization of connection group "%d" (%d%%) exceeds the configured threshold (%d%%).
+*Parameters*::
+*connection_group* (INT): Connection group whose utilization exceeded the configured threshold.
+*current_utilization* (INT): Current connection group utilization.
+*configured_threshold* (INT): Configured connection group utilization threshold.
