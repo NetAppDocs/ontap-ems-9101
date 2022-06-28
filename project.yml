@@ -6,7 +6,7 @@ settings:
     pdf_enabled: true
     avatars_enabled: false
     harmony_enabled: false
-sidebar: 
+sidebar:
   entries:
   - title: ONTAP 9.10.1 EMS reference
     url: /index.html
@@ -5447,15 +5447,29 @@ sidebar:
 
 homepage:
   tiles:
-    - title: More resources 
+    - title: EMS references for other ONTAP releases
       links:
-          - title: Command reference for earlier ONTAP releases
-            url: https://docs.netapp.com/ontap-9/topic/com.netapp.nav.cr/home.html
+          - title: ONTAP 9.11.1
+            url: https://docs.netapp.com/us-en/ontap-ems-9111/index.html
+          - title: ONTAP 9.9.1
+            url: https://library.netapp.com/ecm/ecm_get_file/ECMLP2876977
+          - title: ONTAP 9.8
+            url: https://library.netapp.com/ecm/ecm_get_file/ECMLP2874591
+          - title: ONTAP 9.7
+            url: https://library.netapp.com/ecm/ecm_get_file/ECMLP2864253
+          - title: ONTAP 9.6
+            url: https://library.netapp.com/ecm/ecm_get_file/ECMLP2857180
+          - title: ONTAP 9.5
+            url: https://library.netapp.com/ecm/ecm_get_file/ECMLP2851597
+          - title: ONTAP 9.3
+            url: https://library.netapp.com/ecm/ecm_get_file/ECMLP2843561
+    - title: More resources
+      links:
+          - title: Configure EMS
+            url: https://docs.netapp.com/us-en/ontap/error-messages/index.html
           - title: ONTAP 9 Release Notes
             url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508
-          - title: ONTAP CLI comparison tool 
-            url: https://mysupport.netapp.com/site/info/cli-comparison
-          - title: ONTAP 9 documentation 
+          - title: ONTAP 9 documentation
             url: https://docs.netapp.com/us-en/ontap/
-          - title: Automate with the REST API 
+          - title: Automate with the REST API
             url: https://docs.netapp.com/us-en/ontap-automation/getting_started_with_the_rest_api.html
