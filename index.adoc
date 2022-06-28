@@ -1,0 +1,13 @@
+---
+layout: astra
+sidebar: sidebar
+permalink: index.html
+lead: The ONTAP 9.10.1 ems reference default lead.
+summary: The ONTAP 9.10.1 ems reference default summary.
+---
+= ONTAP 9.10.1 EMS Reference 
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
