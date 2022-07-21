@@ -1,5 +1,7 @@
 settings:
   name: ONTAP 9.10.1 EMS reference
+  github_edit: false
+  github_issue: false
   internal:
     pdf_enabled: true
   prod:
