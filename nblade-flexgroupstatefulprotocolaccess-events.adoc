@@ -1,0 +1,28 @@
+---
+sidebar: sidebar
+permalink: nblade-flexgroupstatefulprotocolaccess-events.html
+keywords: ems, message, messages, event, events, group, catalog
+summary: nblade.flexgroupstatefulprotocolaccess events
+---
+
+= nblade.flexgroupstatefulprotocolaccess events
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+== Nblade.flexgroupStatefulProtocolAccess
+*Severity*::
+ERROR
+*Description*::
+This message occurs when a client tries to access a FlexGroup through a stateful protocol, like SMB1. Currently only NFSv3 mounts and SMB2+ share are supported by FlexGroups.
+*Corrective Action*::
+Make sure a FlexGroup supported protocol is specified for all client mount operations through which a FlexGroup can be accessed. If using NFSv3, consider specifying 'nfsvers=3' as an option for the 'mount' command on all clients accessing a FlexGroup.
+*Syslog Message*::
+Attempt to access FlexGroup with MSID %u with %s denied.
+*Parameters*::
+*msid* (INT): MSID of the FlexGroup being accessed.
+*protocol* (STRING): Client protocol.

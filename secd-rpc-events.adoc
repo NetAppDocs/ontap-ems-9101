@@ -1,0 +1,27 @@
+---
+sidebar: sidebar
+permalink: secd-rpc-events.html
+keywords: ems, message, messages, event, events, group, catalog
+summary: secd.rpc events
+---
+
+= secd.rpc events
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+== secd.rpc.server.ready
+*Severity*::
+INFORMATIONAL
+*Description*::
+This message occurs when SecD successfully loads the configuration and is ready to serve all RPCs.
+*Corrective Action*::
+(None).
+*Syslog Message*::
+SecD is ready to serve all RPCs.
+*Parameters*::
+(None).

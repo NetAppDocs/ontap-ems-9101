@@ -1,0 +1,33 @@
+---
+sidebar: sidebar
+permalink: slice-service-events.html
+keywords: ems, message, messages, event, events, group, catalog
+summary: slice.service events
+---
+
+= slice.service events
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+== slice.service.unhealthy
+*Severity*::
+ALERT
+*Description*::
+This message occurs when the cluster is trying to migrate data away from an unresponsive Slice Service.
+*Corrective Action*::
+Expect cluster to automatically resolve this failure. The system is automatically decommissioning data and re-replicating its data onto other healthy drives.
+*Syslog Message*::
+The cluster is attempting to migrate data away from unresponsive Slice Service ID %u on node %u.
+*Parameters*::
+*serviceID* (INT): Service ID. Identifies the associated cluster service.
+*nodeID* (INT): Node ID. Number of the associated node.
+*cfType* (STRING): Cluster fault type name. Describes the type of the associated object.
+*cfID* (INT): Cluster fault ID. A unique, monotonically increasing number associated with the fault.
+*cfStatus* (INT): Cluster fault current status. 1=New (just reported), 2=Existing (updated), 3=Resolved (closed).
+*cfDetails* (STRING): Cluster Fault Details. This is a text description of the cluster fault including context details.
+*cfExtSrc* (STRING): Cluster Fault externalSource. This is a label attached to a fault created by the CreateClusterFault API command, used for testing.

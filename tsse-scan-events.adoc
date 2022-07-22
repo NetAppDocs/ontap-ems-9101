@@ -1,0 +1,29 @@
+---
+sidebar: sidebar
+permalink: tsse-scan-events.html
+keywords: ems, message, messages, event, events, group, catalog
+summary: tsse.scan events
+---
+
+= tsse.scan events
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+== tsse.scan.start.failed
+*Severity*::
+ERROR
+*Description*::
+This message occurs when either inactive data compression or garbage collect or garbage collect reclamation Scan fails to start.
+*Corrective Action*::
+(None).
+*Syslog Message*::
+'%s' failed to start on '%s' - %s.
+*Parameters*::
+*scan_type* (STRING): Scan type.
+*vol* (STRING): Volume or aggregate name.
+*fail_message* (STRING): Scan failure reason.

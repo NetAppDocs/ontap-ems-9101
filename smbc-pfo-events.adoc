@@ -1,0 +1,51 @@
+---
+sidebar: sidebar
+permalink: smbc-pfo-events.html
+keywords: ems, message, messages, event, events, group, catalog
+summary: smbc.pfo events
+---
+
+= smbc.pfo events
+:toc: macro
+:toclevels: 1
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+== smbc.pfo.completed
+*Severity*::
+NOTICE
+*Description*::
+This message occurs when the SnapMirror(R) Business Continuity (SMBC) planned failover operation completes.
+*Corrective Action*::
+(None).
+*Syslog Message*::
+SMBC planned failover operation completed. Destination path: %s.
+*Parameters*::
+*dstpath* (STRING): Path name of the destination group of the SMBC relationship.
+
+== smbc.pfo.failed
+*Severity*::
+ERROR
+*Description*::
+This message occurs when the SnapMirror(R) Business Continuity (SMBC) planned failover operation fails.
+*Corrective Action*::
+Determine the cause of the failure by using the "snapmirror failover show -fields error-reason" command. After addressing the cause, retry the "snapmirror failover start -destination-path destination_path" command.
+*Syslog Message*::
+SMBC planned failover operation failed. Destination path: %s.
+*Parameters*::
+*dstpath* (STRING): Path name of the destination group of the SMBC relationship.
+
+== smbc.pfo.start
+*Severity*::
+NOTICE
+*Description*::
+This message occurs when the SnapMirror(R) Business Continuity (SMBC) planned failover operation starts.
+*Corrective Action*::
+(None).
+*Syslog Message*::
+SMBC planned failover operation started. Destination path: %s.
+*Parameters*::
+*dstpath* (STRING): Path name of the destination group of the SMBC relationship.
