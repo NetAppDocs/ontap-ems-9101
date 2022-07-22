@@ -31,13 +31,13 @@ jobs:
           token: ${{ env.GH_TOKEN }}
           path: dependencies/jekyll
           ref: ${{ env.FRAMEWORK_BRANCH }}
-             
+
       - name: "Configure"
         uses: ./dependencies/jekyll/.ci/actions/configure
-        
+
       - name: "Install"
         uses: ./dependencies/jekyll/.ci/actions/install
-        
+
       - name: "Lipi Adoc syntax check"
         if: ${{ env.LIPI_ENABLED == 'true' }}
         uses: ./dependencies/jekyll/.ci/actions/lipi-adoc
@@ -47,7 +47,7 @@ jobs:
 
       - name: "Generate PDF"
         uses: ./dependencies/jekyll/.ci/actions/jekyll-pdf
-        
+
       - name: "Lipi Doc site check"
         if: ${{ env.LIPI_ENABLED == 'true' }}
         uses: ./dependencies/jekyll/.ci/actions/lipi-doc
@@ -55,11 +55,11 @@ jobs:
       - name: "Deploy"
         if: ${{ env.DEPLOY_ENABLED == 'true' }}
         uses: ./dependencies/jekyll/.ci/actions/deploy
-        
+
       - name: "Translate"
         if: ${{ env.HARMONY_ENABLED == 'true' }}
         uses: ./dependencies/jekyll/.ci/actions/translate
-        
+
       - name: "Lipi Report"
         if: ${{ always() && env.LIPI_ENABLED == 'true' }}
         uses: ./dependencies/jekyll/.ci/actions/lipi-report
