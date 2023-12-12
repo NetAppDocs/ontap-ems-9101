@@ -6,7 +6,6 @@ summary: slice.service events
 ---
 
 = slice.service events
-:toc: macro
 :toclevels: 1
 :hardbreaks:
 :nofooter:

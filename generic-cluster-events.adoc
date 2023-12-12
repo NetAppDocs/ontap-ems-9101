@@ -6,7 +6,6 @@ summary: generic.cluster events
 ---
 
 = generic.cluster events
-:toc: macro
 :toclevels: 1
 :hardbreaks:
 :nofooter:
