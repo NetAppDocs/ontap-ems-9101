@@ -13,6 +13,10 @@ summary: xyz.trans events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+xyz.trans EMS events occur when Copy-Free Transition's volume transition job starts.
+
+
 == xyz.trans.vol.start
 *Severity*::
 INFORMATIONAL

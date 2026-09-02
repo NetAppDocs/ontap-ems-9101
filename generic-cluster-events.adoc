@@ -13,6 +13,10 @@ summary: generic.cluster events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+generic.cluster EMS events occur when a cluster fault that does not have specific EMS handling is issued by a cluster.
+
+
 == generic.cluster.fault
 *Severity*::
 NOTICE

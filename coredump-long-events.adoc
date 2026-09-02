@@ -13,6 +13,10 @@ summary: coredump.long events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+coredump.long EMS events occur when the coredump manager thread finishes processing a message that took longer than an internal threshold.
+
+
 == coredump.long.running.msg
 *Severity*::
 NOTICE

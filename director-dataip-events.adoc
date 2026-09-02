@@ -13,6 +13,10 @@ summary: director.dataip events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+director.dataip EMS events occur when a data IP address is forcefully removed from a node.
+
+
 == director.dataip.forcefulRemoval
 *Severity*::
 NOTICE
