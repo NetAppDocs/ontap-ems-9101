@@ -13,6 +13,10 @@ summary: slice.service events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+slice.service EMS events occur when the cluster attempts to migrate data away from an unresponsive Slice Service.
+
+
 == slice.service.unhealthy
 *Severity*::
 ALERT

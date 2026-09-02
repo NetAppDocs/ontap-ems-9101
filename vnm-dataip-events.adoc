@@ -13,6 +13,10 @@ summary: vnm.dataip events
 :linkattrs:
 :imagesdir: ./media/
 
+[.lead]
+vnm.dataip EMS events occur when a data IP address is gracefully removed from a node.
+
+
 == vnm.dataip.gracefulRemoval
 *Severity*::
 NOTICE
